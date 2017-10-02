@@ -7,11 +7,9 @@ package dip.lab3.student.solution1;
  */
 public class StartUp {
     public static void main(String[] args) {
-        MessageInput input = new KeyboardInput("Hello");
+        MessageInput message = new KeyboardInput();
         MessageOutput output = new ConsoleOutput();
-        
-        OutputService outputService = new OutputService(output);
-        
-        outputService.performOutput(input);
+        MessageService messageService = new MessageService(output, message.getMessage());
+        messageService.performOutput();
     }
 }

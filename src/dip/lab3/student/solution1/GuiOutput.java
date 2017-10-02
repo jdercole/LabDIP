@@ -3,7 +3,6 @@ package dip.lab3.student.solution1;
 
 import javax.swing.JOptionPane;
 
-
 /**
  *
  * @author Jenna
@@ -11,8 +10,8 @@ import javax.swing.JOptionPane;
 public class GuiOutput implements MessageOutput {
 
     @Override
-    public final void performOutput(MessageInput msg) {
-	JOptionPane.showMessageDialog(null, msg);
+    public final void performOutput(String input) {
+	JOptionPane.showMessageDialog(null, input);
     }
     
 }
